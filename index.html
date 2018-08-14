@@ -2,15 +2,25 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <title>Nasa Stuffs</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>APOD Data</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
+  <div id='photo'>
+  </div>
 
- <script src="main.js" type="module"></script>
+  <form onsubmit="app.controllers.apodController.getPhoto(event)">
+    <label for="date">Pick a Date</label>
+    <input name="date" type="date">
+    <button type='submit'>Submit</button>
+  </form>
+
+
+  <script type="module" src="app/main.js"></script>
 </body>
 
 </html>
