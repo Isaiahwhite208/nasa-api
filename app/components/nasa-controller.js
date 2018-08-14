@@ -15,7 +15,8 @@ function drawNasa(nasa) {
  let nasaElem = document.getElementById('nasa')
  let template = ''
  nasa.results.forEach(nasa => {
-  template += `<div>
+  template +=
+   `<div>
     ${nasa.name}
     </div>`
  })
@@ -32,3 +33,4 @@ export default class NasaController {
   NasaService.getNasa(console.log, drawError)
 
  }
+}
