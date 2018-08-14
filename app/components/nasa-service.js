@@ -8,7 +8,7 @@ export default class NasaService {
    .then(res => {
     let myNasa = res.results.map(rawNasa => {
      let nasa = new Nasa(rawNasa)
-     nasa[nasa.id] = nasa
+     // nasa[nasa.id] = nasa
      return nasa
     })
     draw(myNasa)
