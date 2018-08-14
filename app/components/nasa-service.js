@@ -1,2 +1,5 @@
+import Nasa from "../models/Nasa.js"
 
-export default NasaService
+export default class NasaService {
+
+}

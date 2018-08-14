@@ -1,3 +1,5 @@
 import NasaService from "./nasa-service.js"
 
-export default NasaController
+export default class NasaController {
+
+}
